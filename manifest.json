@@ -1,0 +1,18 @@
+{
+    "manifest_version":3,
+    "version":"1.0",
+    "name":"Test",
+    "action": {},
+    "content_scripts":[
+        {
+        "matches":["*://*.stackoverflow.com/*"],
+        "js":["main.js"]
+        }
+    ],
+    "background":{
+        "serviceworker": "background.js"
+  },
+  "permissions":[
+      "tabs"
+  ]
+}
